@@ -24,6 +24,6 @@ jobs:
     steps:
       - name: ENV_VAR
         env:
-          GITHUB_CONTEXT: $({tojson(github)})
+          GITHUB_CONTEXT: ${{tojson(github)}}
         run: |
           echo "${GITHUB_CONTEXT}"
