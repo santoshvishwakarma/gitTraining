@@ -26,4 +26,4 @@ jobs:
         env:
           GITHUB_CONTEXT: $({tojson(github)})
         run: |
-          echo: "${GITHUB_CONTEXT}"
+          echo "${GITHUB_CONTEXT}"
